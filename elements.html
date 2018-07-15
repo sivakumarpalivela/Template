@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ELements Page</title>
+        <link rel="stylesheet" href="indexpage.css"/>
+        <meta charset="utf-8"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    </head>
+    <body>
+        <div class="retros" id = "retos">
+            <div class="mensu">
+                <p style="width: 50%;padding-left: 33px;font-weight: 900;">RETROSPECT</p>
+                <p style="width: 50%;float: right;text-align: right;padding-right: 33px;font-size: 20px;font-family: 'Open Sans', sans-serif;"><span class="entypo-menu" id='menus'>Menu</span></p>
+            </div>
+            <nav id="drawer" class="nav">
+                    <ul class="nav__list">
+                      <li class="nav__item"><a href="indexpage.html">Home</a></li>
+                      <li class="nav__item"><a href="generic.html">Generic</a></li>
+                      <li class="nav__item"><a href="elements.html">Elements</a></li>
+                    </ul>
+            </nav>
+        </div>
+        <div class="elementpage">
+            <h2 style="font-size: 2.5em;text-align: center;">ELEMENTS</h2>
+            <p style="letter-spacing: 1px;padding-bottom: 5.5em;text-align: center;">LOREM IPSUM DOLOR SIT AMET NULLAM ID EGESTAS URNA ALIQUAM</p>
+            <h3>TEXT</h3>
+            <p class="text">This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>. This is <sup>superscript</sup> text and this is <sub>subscript</sub> text. This is <u>underlined</u> and this is code: <code style="border: 1px solid #f5f5f570;background-color:#f5f5f570;">for (;;) { ... }</code>. Finally, <a href = "#">this is a link</a>.</p>
+            <h3>HEADING WITH A SUBTITLE</h3>
+            <p>LOREM IPSUM DOLOR SIT AMET NULLAM ID EGESTAS URNA ALIQUAM</p>
+            <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+            <h4 style="text-align: left;">HEADING WITH A SUBTITLE</h4>
+            <p>LOREM IPSUM DOLOR SIT AMET NULLAM ID EGESTAS URNA ALIQUAM</p>
+            <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+        </div>
+        <footer class="foot">
+                        <span class="brandico-facebook"></span>
+                        <span class="zocial-twitter"></span>
+                        <span class="entypo-instagrem"></span>
+                        <span class="entypo-linkedin"></span>
+                        <p>&copy;UNTITLED. IMAGES: UNSPLASH. DESIGN: TEMPLATED.</p>
+        </footer>
+        <script>
+            var menu = document.querySelector('#menus');
+            var main = document.querySelector('.retros');
+            var drawer = document.querySelector('.nav');
+      
+            menu.addEventListener('click', function(e) {
+              drawer.classList.toggle('open');
+              e.stopPropagation();
+            });
+            main.addEventListener('click', function() {
+              drawer.classList.remove('open');
+            });
+      
+    </script>
+    </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TemplatePage</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="indexpage.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    </head>
+    <body>
+        <div class="retros">
+            <div class="mensu">
+                <p style="width: 50%;padding-left: 33px;font-weight: 900;">RETROSPECT</p>
+                <p style="width: 50%;float: right;text-align: right;padding-right: 33px;font-size: 20px;font-family: 'Open Sans', sans-serif;"><span class="entypo-menu" id='menu'>Menu</span></p>
+            </div>
+            <nav id="drawer" class="nav">
+                    <ul class="nav__list">
+                      <li class="nav__item"><a href="indexpage.html">Home</a></li>
+                      <li class="nav__item"><a href="generic.html">Generic</a></li>
+                      <li class="nav__item"><a href="elements.html">Elements</a></li>
+                    </ul>
+            </nav>
+            <div class="mainhead">
+                <div class="zocial-android"></div>
+                <h1>ETIAM ADIPISCING</h1>
+                <p class="pclass">MAGNA FEUGIAT LOREM DOLOR EGESTAS</p>
+                <p class="plearn">LEARN MORE</p>
+            </div>
+        </div>
+        <div class="part2">
+            <div class="partsub">
+                <img  class = "imag" src="images/pic01.jpg" height="312px;"/>
+                <div class="paras">
+                <h2>INTEGER VITAE LIBERO ACRISUS EGESTAS PLACERAT SOLLICITUDIN</h2>
+                <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est</p>
+                <span class="more">MORE</span>
+                </div>
+            </div>
+
+            <div class="partsub">
+                <div class="paras">
+                    <h2>INTEGER VITAE LIBERO ACRISUS EGESTAS PLACERAT SOLLICITUDIN</h2>
+                    <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est.</p>
+                    <span class="more">MORE</span>
+                </div>
+                <img class="imag" src="images/pic02.jpg" height="312px"/>
+            </div>
+        </div>
+
+        <div class="part3">
+            <div class="part3sub">
+                <h2>ALIQUAM BLANDIT MAURIS</h2>
+                <p>IPSUM DOLOR TEMPUS COMMODO TURPIS ADIPISCING TEMPOR PLACERAT SED AMET ACCUMSAN</p>
+            </div>
+            <div class="imago">
+                <img src="images/pic03.jpg"/>
+                <img src="images/pic04.jpg"/>
+                <img src="images/pic05.jpg"/>
+                <img src="images/pic06.jpg"/>
+                <img src="images/pic07.jpg"/>
+                <img src="images/pic08.jpg"/>
+                <img src="images/pic09.jpg"/>
+                <img src="images/pic10.jpg"/>
+            </div>
+            <p class="tempo">TEMPUS ALIQUAM</p>
+        </div>
+
+        <div class="part4">
+            <div class="part4sub">
+                <h2>MAGNA SED CONSEQUAT TEMPUS</h2>
+                <p>IPSUM DOLOR TEMPUS COMMODO TURPIS ADIPISCING TEMPOR PLACERAT SED AMET ACCUMSAN</p>
+                <p><span class="magna">MAGNA FEUGIAT</span></p>
+            </div>
+        </div>
+
+        <div class="part5">
+            <div class="part5sub">
+                <h2 style="text-align: center;">GET IN TOUCH</h2>
+                <p style="text-align: center;">IPSUM DOLOR TEMPUS COMMODO ADIPISCING</p>
+                <form>
+                    <input style="width: 45.5%;margin-right: 5px;color: white;" type="text" placeholder="Name"/>
+                    <input  style = "width: 46%;margin-left: 5px;color: white;"type="email" placeholder="Email"/>
+                    <textarea type="textarea" style="width: 96.5%;margin-top: 15px;color: white;height: 150px;" placeholder="Message"></textarea>
+                    <div class="subs">
+                    <input type="submit" style="margin-right: 7px;padding: 15px 40px 15px 40px;border-radius: 35px;
+                    color: white;background-color: #06aeae;font-weight: 700;" value="SUBMIT"/>
+                    <input type="reset" style="margin-left: 7px;padding: 15px 40px 15px 40px;border-radius: 35px;
+                    color: white;font-weight: 700;border: 2px solid white;" value="RESET"/>
+                    </div>
+                </form>
+            </div>
+            <footer class="foot">
+                <span class="brandico-facebook"></span>
+                <span class="zocial-twitter"></span>
+                <span class="entypo-instagrem"></span>
+                <span class="entypo-linkedin"></span>
+                <p>&copy;UNTITLED. IMAGES: UNSPLASH. DESIGN: TEMPLATED.</p>
+            </footer>
+        </div>
+
+        <script>
+                var menu = document.querySelector('#menu');
+                var main = document.querySelector('.retros');
+                var drawer = document.querySelector('.nav');
+          
+                menu.addEventListener('click', function(e) {
+                  drawer.classList.toggle('open');
+                  e.stopPropagation();
+                });
+                main.addEventListener('click', function() {
+                  drawer.classList.remove('open');
+                });
+          
+        </script>
+    </body>
+</html>

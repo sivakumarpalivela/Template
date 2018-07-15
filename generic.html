@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="indexpage.css"/>
+        <title>Generic Page</title>
+        <meta charset="utf-8"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    </head>
+    <body>
+        <div class="retros" id = "retos">
+            <div class="mensu">
+                <p style="width: 50%;padding-left: 33px;font-weight: 900;">RETROSPECT</p>
+                <p style="width: 50%;float: right;text-align: right;padding-right: 33px;font-size: 20px;font-family: 'Open Sans', sans-serif;"><span class="entypo-menu" id='menus'>Menu</span></p>
+            </div>
+            <nav id="drawer" class="nav">
+                    <ul class="nav__list">
+                      <li class="nav__item"><a href="indexpage.html">Home</a></li>
+                      <li class="nav__item"><a href="generic.html">Generic</a></li>
+                      <li class="nav__item"><a href="elements.html">Elements</a></li>       
+                    </ul>
+            </nav>
+        </div>
+        <div class="generic">
+            <h2>GENERIC</h2>
+            <h4>LOREM IPSUM DOLOR SIT AMET NULLAM ID EGESTAS URNA ALIQUAM</h4>
+            <img style ="width: 100%;" src="images/pic11.jpg"/>
+            <p>Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit accumsan sapien blandit ac amet faucibus aliquet placerat commodo. Interdum ante aliquet commodo accumsan vis phasellus adipiscing. Ornare a in lacinia. Vestibulum accumsan ac metus massa tempor. Accumsan in lacinia ornare massa amet. Ac interdum ac non praesent. Cubilia lacinia interdum massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan.</p>
+            <p>Amet nibh adipiscing adipiscing. Commodo ante vis placerat interdum massa massa primis. Tempus condimentum tempus non ac varius cubilia adipiscing placerat lorem turpis at. Aliquet lorem porttitor interdum. Amet lacus. Aliquam lobortis faucibus blandit ac phasellus. In amet magna non interdum volutpat porttitor metus a ante ac neque. Nisi turpis. Commodo col. Interdum adipiscing mollis ut aliquam id ante adipiscing commodo integer arcu amet Ac interdum ac non praesent. Cubilia lacinia interdum massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan commodo odio cubilia ac eu interdum placerat placerat arcu commodo lobortis adipiscing semper ornare pellentesque.</p>
+            <p>Amet nibh adipiscing adipiscing. Commodo ante vis placerat interdum massa massa primis. Tempus condimentum tempus non ac varius cubilia adipiscing placerat lorem turpis at. Aliquet lorem porttitor interdum. Amet lacus. Aliquam lobortis faucibus blandit ac phasellus. In amet magna non interdum volutpat porttitor metus a ante ac neque. Nisi turpis. Commodo col. Interdum adipiscing mollis ut aliquam id ante adipiscing commodo integer arcu amet blandit adipiscing arcu ante.</p>
+        </div>
+        <footer class="foot">
+            <span class="brandico-facebook"></span>
+            <span class="zocial-twitter"></span>
+            <span class="entypo-instagrem"></span>
+            <span class="entypo-linkedin"></span>
+            <p>&copy;UNTITLED. IMAGES: UNSPLASH. DESIGN: TEMPLATED.</p>
+        </footer>
+        <script>
+            var menu = document.querySelector('#menus');
+            var main = document.querySelector('.generic');
+            var drawer = document.querySelector('.nav');
+      
+            menu.addEventListener('click', function(e) {
+              drawer.classList.toggle('open');
+              e.stopPropagation();
+            });
+            main.addEventListener('click', function() {
+              drawer.classList.remove('open');
+            });
+    </script>
+    </body>
+</html>
